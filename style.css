@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    border: 0.5px solid grey;
+    box-shadow: 0.5px 0.5px 1px black;
+    border-radius: 15px;
+    padding: 0.25em 1em 1em 1em;
+    margin-bottom: 2em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1em 2.5em;
+}
+
+.botao {
+    padding: 0.5em 1em;
+}
+
+.botao:hover {
+    background-color: lightgrey;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grupo_titulo {
+    padding-right: 6px;
+}
+
+.caixa_texto {
+    width: 100px;
+    padding: 5px;
+}
+
+.espaco {
+    margin-top: 1em;
+}

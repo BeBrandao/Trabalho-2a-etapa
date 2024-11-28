@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 2a Etapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Atividade 1</h2>
+
+        <table>
+            <tr class="cabecalho">
+                <th class="cabecalho_titulo">Nome</th>
+                <th class="cabecalho_titulo">Qtd.</th>
+                <th class="cabecalho_titulo">Opções</th>
+            </tr>
+
+            <tr class="linha_1">
+                <td class="linha_1_titulo">Copos d'água</td>
+                <td id="linha_1_contador">0</td>
+                <td>
+                    <button class="botao" onclick="alterarValor('linha_1_contador', 1)">+</button>
+                    <button class="botao" onclick="alterarValor('linha_1_contador', -1)">-</button>
+                </td>
+            </tr>
+
+            <tr class="linha_2">
+                <td class="linha_2_titulo">Pontos</td>
+                <td id="linha_2_contador">0</td>
+                <td>
+                    <button class="botao" onclick="alterarValor('linha_2_contador', 1)">+</button>
+                    <button class="botao" onclick="alterarValor('linha_2_contador', -1)">-</button>
+                </td>
+            </tr>
+
+            <tr class="linha_3">
+                <td class="linha_3_titulo">Voltas na Quadra</td>
+                <td id="linha_3_contador">0</td>
+                <td>
+                    <button class="botao" onclick="alterarValor('linha_3_contador', 1)">+</button>
+                    <button class="botao" onclick="alterarValor('linha_3_contador', -1)">-</button>
+                </td>
+            </tr>
+
+            <tr class="linha_4">
+                <td class="linha_4_titulo">Idas no Banheiro</td>
+                <td id="linha_4_contador">0</td>
+                <td>
+                    <button class="botao" onclick="alterarValor('linha_4_contador', 1)">+</button>
+                    <button class="botao" onclick="alterarValor('linha_4_contador', -1)">-</button>
+                </td>
+            </tr>
+
+            <tr class="linha_5">
+                <td class="linha_5_titulo">Fuscas azuis</td>
+                <td id="linha_5_contador">0</td>
+                <td>
+                    <button class="botao" onclick="alterarValor('linha_5_contador', 1)">+</button>
+                    <button class="botao" onclick="alterarValor('linha_5_contador', -1)">-</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Atividade 2</h2>
+
+        <div class="grupo">
+            <p class="grupo_titulo">Trabalho 1</p>
+            <input type="text" class="caixa_texto" id="item-1">
+        </div>
+
+        <div class="grupo">
+            <p class="grupo_titulo">Trabalho 2</p>
+            <input type="text" class="caixa_texto" id="item-2">
+        </div>
+
+        <div class="grupo">
+            <p class="grupo_titulo">Trabalho 3</p>
+            <input type="text" class="caixa_texto" id="item-3">
+        </div>
+
+        <button class="botao espaco" onclick="calcularMedia()">Calcular Média</button>
+
+        <p id="media-resultado">A média é: </p>
+        <p id="media-analise">Conceito Obtido: </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
